@@ -1,4 +1,4 @@
-Plik wykonywalny aplikacji znajduje się w katalogu LoadTester/bin/release.
+﻿Program należy skompilować i uruchomić z wykorzystaniem programu Visual Studio 2017.
 
 Obsługa:
 1. W polu "Target host" należy podać pełny adres testowanej strony (łącznie z prefixem http lub https).
