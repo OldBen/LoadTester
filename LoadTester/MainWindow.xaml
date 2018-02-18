@@ -1,0 +1,21 @@
+﻿<Window x:Class="LoadTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoadTester"
+        mc:Ignorable="d"
+        Title="Load Tester" Height="500" Width="700">
+    <Grid Margin="0,0,0,0">
+        <TextBox x:Name="txtUrl" HorizontalAlignment="Left" Height="23" Margin="174,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301"/>
+        <Label x:Name="lblTarget" Content="Target host:" HorizontalAlignment="Left" Margin="86,68,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSend" Content="Send" HorizontalAlignment="Left" Margin="247,240,0,0" VerticalAlignment="Top" Width="96" Click="btnSend_Click" Height="41" FontSize="16"/>
+        <Label x:Name="lblResponse" Content="Response:" HorizontalAlignment="Left" Margin="94,312,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.192"/>
+        <TextBlock x:Name="blkResponse" HorizontalAlignment="Left" Margin="174,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="lblNumber" Content="Number of requests:" HorizontalAlignment="Left" Margin="39,114,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRequests" HorizontalAlignment="Left" Height="23" Margin="174,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" PreviewTextInput="NumericTextBoxValidate"/>
+        <Label x:Name="lblRampUp" Content="Ramp-up period (s):" HorizontalAlignment="Left" Margin="42,161,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRampUp" HorizontalAlignment="Left" Height="23" Margin="174,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" PreviewTextInput="NumericTextBoxValidate"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoadTester"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" x:Name="ChartWindow1" x:Class="LoadTester.ChartWindow"
+        mc:Ignorable="d"
+        Title="ChartWindow" Height="600" Width="600" ContentRendered="ChartWindow1_ContentRendered">
+    <Grid>
+
+        <chartingToolkit:Chart Name="chtChart" Title="Reponse Time Breakdown" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="498" Width="572">
+            <chartingToolkit:ColumnSeries x:Name="serValues" Title="Response time (ms)"  DependentValuePath="Value"  IndependentValuePath="Key" ItemsSource="{Binding}" 
+            IsSelectionEnabled="True"/>
+        </chartingToolkit:Chart>
+        <Button Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="211,508,0,0" VerticalAlignment="Top" Width="126" Height="51" Click="btnClose_Click"/>
+
+    </Grid>
+</Window>
